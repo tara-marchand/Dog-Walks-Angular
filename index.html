@@ -1,0 +1,28 @@
+<html data-ng-app="dogWalks">
+
+	<head>
+	</head>
+
+	<body data-ng-controller="dogsController">
+		<h1>Dog Walks</h1>
+
+		<h2>Current dogs</h2>
+		<ul data-ng-repeat="dog in dogs">
+			<li>
+				<span data-ng-bind="dog.name"></span> <a href="#" data-ng-click="removeDog(dog)">X</a>
+			</li>
+		</ul>
+
+		<h2>Add a dog!</h2>
+		<label for="add-dog">Dog Name:</label>
+		<input type="text" id="add-dog" data-ng-model="newDog.name"><br>
+		<button data-ng-click="addDog()">Add Dog</button>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+		<script src="https://cdn.firebase.com/v0/firebase.js"></script>
+		<script src="angularfire.min.js"></script>
+		<script src="dog-walks-angular.js"></script>
+
+	</body>
+
+</html>
