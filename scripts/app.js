@@ -1,4 +1,3 @@
-angular.module("DogWalksAppDependencies");
 
 angular.module("DogWalksApp", ["firebase", "DogWalksAppDependencies"])
 	.config(["$routeProvider", function($routeProvider) {
@@ -7,3 +6,5 @@ angular.module("DogWalksApp", ["firebase", "DogWalksAppDependencies"])
 			.otherwise({ redirectTo: "/dogs" });
 		}
 	]);
+
+angular.module("DogWalksAppDependencies", []);
