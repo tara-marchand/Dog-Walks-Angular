@@ -1,33 +1,27 @@
-<html data-ng-app="dogWalks">
+<html data-ng-app="DogWalksApp">
 
 	<head>
 	</head>
 
-	<body data-ng-controller="dogWalksController">
+	<body>
 		<h1>Dog Walks</h1>
 
 		<div data-ng-view=""></div>
 
-		<div>
-			<h2>Add a dog!</h2>
+		<hr>
 
-			<label for="add-dog-name">Name:</label>
-			<input type="text" id="add-dog-name" data-ng-model="newDog.name"><br>
+		<div data-ng-include="" data-src="'views/dog-add.html'" data-ng-controller="DogAddController"></div>
 
-			<label for="add-dog-breed">Breed:</label>
-			<input type="text" id="add-dog-breed" data-ng-model="newDog.breed"><br>
-
-			<label for="add-dog-age">Age:</label>
-			<input type="text" id="add-dog-age" data-ng-model="newDog.age"><br>
-
-			<button data-ng-click="addDog()">Add Dog</button>
-
-			<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
-			<script src="https://cdn.firebase.com/v0/firebase.js"></script>
-			<script src="angularfire.min.js"></script>
-			<script src="dog-walks-angular.js"></script>
-		</div>
-
+		<!-- organization: http://briantford.com/blog/huuuuuge-angular-apps.html -->
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.js"></script>
+		<script src="https://cdn.firebase.com/v0/firebase.js"></script>
+		<script src="scripts/libs/angularFire.js"></script>
+		<script src="scripts/app.js"></script>
+		<script src="scripts/services/dogsFactory.js"></script>
+		<script src="scripts/controllers/dogListController.js"></script>
+		<script src="scripts/controllers/dogAddController.js"></script>
+		<script src="scripts/controllers/dogDetailController.js"></script>
+		<script>angular.bootstrap(document, ["DogWalksApp"]);</script>
 	</body>
 
 </html>

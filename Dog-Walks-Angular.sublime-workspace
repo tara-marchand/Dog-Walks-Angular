@@ -3,6 +3,14 @@
 	{
 		"selected_items":
 		[
+			[
+				"route",
+				"routeParams"
+			],
+			[
+				"an",
+				"angularFire"
+			]
 		]
 	},
 	"buffers":
@@ -11,15 +19,19 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 47.0,
 		"selected_items":
 		[
 			[
-				"",
+				"install",
 				"Package Control: Install Package"
 			],
 			[
-				"install",
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"",
 				"Package Control: Install Package"
 			],
 			[
@@ -44,6 +56,10 @@
 	},
 	"file_history":
 	[
+		"/Users/tara/Dropbox/Bitbucket Repos/Dog-Walks-Angular/views/dog-list.html",
+		"/Users/tara/Dropbox/Bitbucket Repos/Dog-Walks-Angular/index.html",
+		"/Users/tara/Dropbox/Bitbucket Repos/Dog-Walks-Angular/views/dog-detail.html",
+		"/Users/tara/Dropbox/Bitbucket Repos/Dog-Walks-Angular/dog-walks-angular.js",
 		"/Users/taram/Dropbox/Github Repos/Angular-Thing/index.html",
 		"/Users/taram/Library/Application Support/Sublime Text 2/Packages/View In Browser/View In Browser.sublime-settings",
 		"/Users/taram/Library/Application Support/Sublime Text 2/Packages/User/View In Browser.sublime-settings",
@@ -53,7 +69,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -67,6 +83,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"controller",
 			"$/SurfaceWeb/Surface-GA-jQueryBBQ/",
 			"	edit	"
 		],
@@ -99,7 +116,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -149,6 +166,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 176.0,
 	"status_bar_visible": true
 }

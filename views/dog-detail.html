@@ -1,10 +1,10 @@
-<div>
+<div data-ng-controller="DogDetailController">
 	<div>
 		<h2>Selected dog</h2>
 		<ul>
-			<li data-ng-bind="dogName"></li>
-			<li data-ng-bind="dogName"></li>
-			<li data-ng-bind="dogName"></li>
+			<li data-ng-bind="selectedDog.name"></li>
+			<li data-ng-bind="selectedDog.breed"></li>
+			<li data-ng-bind="selectedDog.age"></li>
 		</ul>
 	</div>
 	<a href="#/dogs">List</a>
