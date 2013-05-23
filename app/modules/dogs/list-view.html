@@ -1,0 +1,8 @@
+<div>
+	<h2>Current dogs</h2>
+	<ul data-ng-repeat="dog in dogs">
+		<li>
+			<a data-ng-bind="dog.name" data-ng-href="#/dogs/{{dog.$id}}"></a> <a href="#" data-ng-click="removeDog(dog)">remove</a>
+		</li>
+	</ul>
+</div>

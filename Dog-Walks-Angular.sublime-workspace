@@ -15,34 +15,31 @@
 	},
 	"buffers":
 	[
-		{
-			"contents": "<html data-ng-app=\"DogWalksApp\">\n\n	<head>\n	</head>\n\n	<body>\n		<h1>Dog Walks</h1>\n\n		<div data-ng-view=\"\"></div>\n\n		<hr>\n\n		<div data-ng-include=\"\" data-src=\"'views/dog-add.html'\" data-ng-controller=\"DogAddController\"></div>\n\n		<!-- organization: http://briantford.com/blog/huuuuuge-angular-apps.html -->\n/*\n AngularJS v1.0.6\n (c) 2010-2012 Google, Inc. http://angularjs.org\n License: MIT\n*/\n(function(i){'use strict';function d(c,b,e){return c[b]||(c[b]=e())}return d(d(i,\"angular\",Object),\"module\",function(){var c={};return function(b,e,f){e&&c.hasOwnProperty(b)&&(c[b]=null);return d(c,b,function(){function a(a,b,d){return function(){c[d||\"push\"]([a,b,arguments]);return g}}if(!e)throw Error(\"No module: \"+b);var c=[],d=[],h=a(\"$injector\",\"invoke\"),g={_invokeQueue:c,_runBlocks:d,requires:e,name:b,provider:a(\"$provide\",\"provider\"),factory:a(\"$provide\",\"factory\"),service:a(\"$provide\",\"service\"),\nvalue:a(\"$provide\",\"value\"),constant:a(\"$provide\",\"constant\",\"unshift\"),filter:a(\"$filterProvider\",\"register\"),controller:a(\"$controllerProvider\",\"register\"),directive:a(\"$compileProvider\",\"directive\"),config:h,run:function(a){d.push(a);return this}};f&&h(f);return g})}})})(window);\n		<script src=\"https://cdn.firebase.com/v0/firebase.js\"></script>\n		<script src=\"http://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.js\"></script>\n		<script src=\"scripts/libs/angularFire.js\"></script>\n		<script src=\"scripts/services/DogsFactory.js\"></script>\n		<script src=\"scripts/controllers/DogListController.js\"></script>\n		<script src=\"scripts/controllers/DogAddController.js\"></script>\n		<script src=\"scripts/controllers/DogDetailController.js\"></script>\n	</body>\n\n</html>",
-			"file": "index.html",
-			"file_size": 791,
-			"file_write_time": 1368847995000000,
-			"settings":
-			{
-				"buffer_size": 1672,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "scripts/app.js",
-			"settings":
-			{
-				"buffer_size": 362,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 107.0,
 		"selected_items":
 		[
 			[
+				"preview",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"markdown",
+				"Markdown Preview: open Markdown Cheat sheet"
+			],
+			[
 				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
 				"Package Control: Install Package"
 			],
 			[
@@ -58,7 +55,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 392.0
+		"width": 523.0
 	},
 	"console":
 	{
@@ -75,6 +72,25 @@
 	},
 	"file_history":
 	[
+		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/index.html",
+		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/modules/dogs/dogs.js",
+		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/scripts/app.js",
+		"/Users/taram/Library/Application Support/Sublime Text 2/Packages/Markdown Preview/sample.md",
+		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/README.md",
+		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/modules/dogs/dog-detail-controller.js",
+		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/modules/dogs/dog-add-controller.js",
+		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/modules/dogs/dogs-list-controller.js",
+		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/modules/dogs/dogs-factory.js",
+		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/scripts/services/DogsFactory.js",
+		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/scripts/controllers/DogListController.js",
+		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/scripts/controllers/DogDetailController.js",
+		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/scripts/controllers/DogAddController.js",
+		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/dogs/dogs.js",
+		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/index.html",
+		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/scripts/app.js",
+		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/scripts/services/DogsFactory.js",
+		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/scripts/firebase-url.js",
+		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/.gitignore",
 		"/Users/tara/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/tara/Dropbox/Github Repos/Dog-Walks-Angular/dog-walks-angular.js",
 		"/Users/tara/Dropbox/Github Repos/Dog-Walks-Angular/index.html",
@@ -97,13 +113,17 @@
 		"height": 0.0,
 		"where_history":
 		[
+			"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular"
 		]
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"\"Dogs\"",
+			"DogWalksAppDependencies",
+			"DogsWalkAppDependencies",
 			"controller",
 			"$/SurfaceWeb/Surface-GA-jQueryBBQ/",
 			"	edit	"
@@ -114,6 +134,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"\"dogs\"",
+			"Dogs",
 			"",
 			" "
 		],
@@ -126,62 +148,13 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "index.html",
-					"settings":
-					{
-						"buffer_size": 1672,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1184,
-								304
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "scripts/app.js",
-					"settings":
-					{
-						"buffer_size": 362,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								359,
-								359
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
@@ -202,11 +175,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.924698795181,
 			1.0
 		],
 		"rows":
@@ -241,6 +221,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 176.0,
+	"side_bar_width": 223.0,
 	"status_bar_visible": true
 }
