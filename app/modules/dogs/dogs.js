@@ -4,6 +4,15 @@ angular.module("dogs", [])
 		$routeProvider
 			.when("/dogs", {
 				controller: "DogsListController",
+				resolve: {
+					dogs: function($q, DogsFactory) {
+						var deferred = $q.defer();
+						DogsFactory.getAllDogs().then(function(dogs) {
+							deferred.resolve(dogs);
+						});
+						return deferred.promise;
+					}
+				},
 				templateUrl: "modules/dogs/list-view.html"
 			})
 
@@ -13,11 +22,12 @@ angular.module("dogs", [])
 					dog: function($q, DogsFactory, $route) {
 						var deferred = $q.defer();
 						var dogId = $route.current.params.dogId;
-
-						angular.forEach(DogsFactory.dogs, function(dog) {
-							if (dog.$id === dogId) {
-								deferred.resolve(dog);
-							}
+						DogsFactory.getAllDogs().then(function(dogs) {
+							angular.forEach(dogs, function(dog) {
+								if (dog.$id === dogId) {
+									deferred.resolve(dog);
+								}
+							});
 						});
 						return deferred.promise;
 					}
@@ -31,26 +41,54 @@ angular.module("dogs", [])
 		}
 	])
 
-	.factory("DogsFactory", function (angularFireCollection) {
+	// using angularFireCollection as factory:
+	// https://gist.github.com/jaredwilli/5472340
+	.factory("DogsFactory", function ($q, angularFireCollection, $rootScope) {
 		var dogsFirebase = new Firebase(firebaseUrls.dogs);
 
-		this.dogs = angularFireCollection(dogsFirebase);
+		this.getAllDogs = function() {
+			var deferred = $q.defer();
+			var dogs = angularFireCollection(dogsFirebase);
+			// make sure dogs are available -- return value as a promise
+			var dogsInterval = setInterval(function() {
+				if (dogs.length) {
+					clearTimeout(dogsInterval);
+					$rootScope.$apply(deferred.resolve(dogs));
+				}
+			}, 100);
+			return deferred.promise;
+		};
+
+		this.addDog = function(dog) {
+			this.getAllDogs().then(function(dogs) {
+				dogs.add(dog);
+			});
+		};
+
+		this.removeDog = function(dog) {
+			this.getAllDogs().then(function(dogs) {
+				dogs.remove(dog);
+			});
+		};
+
 		return this;
 	})
 
-	.controller("DogsListController", function ($scope, DogsFactory) {
-		$scope.dogs = DogsFactory.dogs;
+	// dogs passed from resolved promise in $routeProvider
+	.controller("DogsListController", function ($scope, DogsFactory, dogs) {
+		$scope.dogs = dogs;
 		$scope.removeDog = function(dog) {
-			DogsFactory.dogs.remove(dog);
+			DogsFactory.removeDog(dog);
 		};
 	})
 
 	.controller("DogAddController", function ($scope, DogsFactory) {
 		$scope.addDog = function(dogToAdd) {
-			DogsFactory.dogs.add(dogToAdd);
+			DogsFactory.addDog(dogToAdd);
 		};
 	})
 
+	// dog passed from resolved promise in $routeProvider
 	.controller("DogDetailController", function ($scope, dog) {
 		$scope.selectedDog = dog;
 	});
