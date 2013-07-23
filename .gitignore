@@ -4,3 +4,5 @@ scripts/firebase-url.js
 dist
 *sublime*
 *.log
+bower_components
+css

@@ -1,0 +1,14 @@
+{
+    "name": "Dog-Walks-Angular",
+    "version": "0.0.1",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components"
+    ],
+    "dependencies": {
+        "angular": "1.0.7",
+        "angular-loader": "1.0.7",
+        "angular-fire": "0.2.0"
+    }
+}
