@@ -1,3 +1,6 @@
+.sass-cache
 scripts/firebase-url.js
 .DS_Store
 dist
+*sublime*
+*.log

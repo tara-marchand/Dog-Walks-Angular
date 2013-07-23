@@ -4,14 +4,6 @@
 		"selected_items":
 		[
 			[
-				"Dogs",
-				"DogsFactory"
-			],
-			[
-				"Dog",
-				"DogDetailController"
-			],
-			[
 				"route",
 				"routeParams"
 			],
@@ -27,52 +19,20 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 87.0,
+		"height": 47.0,
 		"selected_items":
 		[
-			[
-				"git push",
-				"Git: Push"
-			],
-			[
-				"git commit",
-				"Git: Commit"
-			],
-			[
-				"git ",
-				"Git: Commit"
-			],
-			[
-				"git add ",
-				"Git: Add..."
-			],
-			[
-				"git com",
-				"Git: Commit"
-			],
-			[
-				"git add",
-				"Git: Add..."
-			],
-			[
-				"preview",
-				"Markdown Preview: preview in Browser"
-			],
-			[
-				"markdown",
-				"Markdown Preview: open Markdown Cheat sheet"
-			],
 			[
 				"install",
 				"Package Control: Install Package"
 			],
 			[
-				"remove",
-				"Package Control: Remove Package"
+				"list",
+				"Package Control: List Packages"
 			],
 			[
-				"pack",
-				"Package Control: Install Package"
+				"package",
+				"Package Control: List Packages"
 			],
 			[
 				"ins",
@@ -80,10 +40,6 @@
 			],
 			[
 				"",
-				"Package Control: Install Package"
-			],
-			[
-				"package",
 				"Package Control: Install Package"
 			]
 		],
@@ -104,42 +60,15 @@
 	},
 	"file_history":
 	[
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/scripts/common/directives.js",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/modules/dogs/detail-view.html",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/modules/dogs/list-view.html",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/scripts/app.js",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/modules/dogs/dogs.js",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/test/unit/modules/dogs/dogs-spec.js",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/test/unit/config.js",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/index.html",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/Gruntfile.js",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/dist/templates/app.js",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/package.json",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/dist/index.html",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/.gitignore",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/scripts/firebase-url.js",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/gruntFile.js",
-		"/Users/taram/Library/Application Support/Sublime Text 2/Packages/Markdown Preview/sample.md",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/README.md",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/modules/dogs/dog-detail-controller.js",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/modules/dogs/dog-add-controller.js",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/modules/dogs/dogs-list-controller.js",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/modules/dogs/dogs-factory.js",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/scripts/services/DogsFactory.js",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/scripts/controllers/DogListController.js",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/scripts/controllers/DogDetailController.js",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/scripts/controllers/DogAddController.js",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/app/dogs/dogs.js",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/index.html",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/scripts/app.js",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/scripts/services/DogsFactory.js",
-		"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular/scripts/firebase-url.js",
-		"/Users/tara/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/Users/tara/Dropbox/Github Repos/Dog-Walks-Angular/dog-walks-angular.js",
+		"/Users/tara/Dropbox/Github Repos/Dog-Walks-Angular/Dog-Walks-Angular.sublime-workspace",
+		"/Users/tara/Dropbox/Github Repos/Dog-Walks-Angular/scripts/app.js",
 		"/Users/tara/Dropbox/Github Repos/Dog-Walks-Angular/index.html",
-		"/Users/tara/Dropbox/Github Repos/Dog-Walks-Angular/views/dog-add.html",
-		"/Users/tara/Dropbox/Github Repos/Dog-Walks-Angular/views/dog-list.html",
-		"/Users/tara/Dropbox/Github Repos/Dog-Walks-Angular/views/dog-detail.html",
+		"/Users/tara/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/tara/Dropbox/Bitbucket Repos/Dog-Walks-Angular/dog-walks-angular.js",
+		"/Users/tara/Dropbox/Bitbucket Repos/Dog-Walks-Angular/index.html",
+		"/Users/tara/Dropbox/Bitbucket Repos/Dog-Walks-Angular/views/dog-add.html",
+		"/Users/tara/Dropbox/Bitbucket Repos/Dog-Walks-Angular/views/dog-list.html",
+		"/Users/tara/Dropbox/Bitbucket Repos/Dog-Walks-Angular/views/dog-detail.html",
 		"/Users/taram/Dropbox/Github Repos/Angular-Thing/index.html",
 		"/Users/taram/Library/Application Support/Sublime Text 2/Packages/View In Browser/View In Browser.sublime-settings",
 		"/Users/taram/Library/Application Support/Sublime Text 2/Packages/User/View In Browser.sublime-settings",
@@ -156,22 +85,14 @@
 		"height": 0.0,
 		"where_history":
 		[
-			"/Users/taram/Dropbox/Github Repos/Dog-Walks-Angular"
 		]
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
-			"index",
-			"js:",
-			"js",
-			"'",
-			"></script>",
-			"\"Dogs\"",
-			"DogWalksAppDependencies",
-			"DogsWalkAppDependencies",
+			"Bitbucket Repos",
 			"controller",
 			"$/SurfaceWeb/Surface-GA-jQueryBBQ/",
 			"	edit	"
@@ -182,10 +103,7 @@
 		"regex": false,
 		"replace_history":
 		[
-			"\"",
-			"",
-			"\"dogs\"",
-			"Dogs",
+			"Github Repos",
 			"",
 			" "
 		],
@@ -234,10 +152,6 @@
 		]
 	},
 	"menu_visible": true,
-	"output.git":
-	{
-		"height": 100.0
-	},
 	"replace":
 	{
 		"height": 62.0
@@ -263,6 +177,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 223.0,
+	"side_bar_width": 176.0,
 	"status_bar_visible": true
 }
