@@ -6,27 +6,23 @@
 	</head>
 
 	<body>
-		<h1>Dog Walks</h1>
-
-		<div data-ng-view=""></div>
-
-		<hr>
-
-		<div data-ng-include="" data-src="'html/dog-add-view.html'" data-ng-controller="DogAddController"></div>
+		<article>
+			<h1>Dog Walks</h1>
+			<div data-ng-view=""></div>
+			<hr>
+			<div data-ng-include="" data-src="'html/dog-add-view.html'" data-ng-controller="DogAddController"></div>
+		</article>
 
 		<script src="https://cdn.firebase.com/v0/firebase.js"></script>
-
 		<script src="bower_components/angular-loader/angular-loader.min.js"></script>
 		<!-- organization: http://briantford.com/blog/huuuuuge-angular-apps.html -->
 		<script src="bower_components/angular/angular.min.js"></script>
-
 		<script src="bower_components/angular-fire/angularFire.js"></script>
 		<!-- external store for Firebase URLs -->
 		<script src="js/firebase-url.js"></script>
 		<script src="js/directives.js"></script>
 		<script src="js/app.js"></script>
 		<script src="js/dogs.js"></script>
-
 	</body>
 
 </html>

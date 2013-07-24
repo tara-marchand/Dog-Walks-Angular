@@ -1,3 +1,16 @@
-@import "compass/reset";
 @import "compass/css3";
+@import "_flexbox";
 
+
+html {
+    // height: 100%;
+}
+
+article div {
+    // @include display-flex();
+    // @include align-items(center);
+    // @include justify-content(center);
+
+   // margin: 0;
+   // height: 100%;
+}
