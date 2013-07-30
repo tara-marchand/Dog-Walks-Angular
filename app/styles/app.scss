@@ -3,14 +3,17 @@
 
 
 html {
-    // height: 100%;
+// height: 100%;
 }
 
-article div {
-    // @include display-flex();
+article {
+    @include display-flex();
+
+    div {
     // @include align-items(center);
     // @include justify-content(center);
 
-   // margin: 0;
-   // height: 100%;
+    // margin: 0;
+    // height: 100%;
+    }
 }

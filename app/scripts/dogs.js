@@ -13,7 +13,7 @@ angular.module("dogs", [])
 						return deferred.promise;
 					}
 				},
-				templateUrl: "html/doglist-view.html"
+				templateUrl: "doglist-view.html"
 			})
 
 			.when("/dogs/:dogId", {
@@ -32,7 +32,7 @@ angular.module("dogs", [])
 						return deferred.promise;
 					}
 				},
-				templateUrl: "html/dog-detail-view.html"
+				templateUrl: "dog-detail-view.html"
 			})
 
 			.otherwise({
